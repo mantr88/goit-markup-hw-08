@@ -1,0 +1,45 @@
+.clients__list {
+    display:flex;
+    margin-left: calc(-1 * $card-set-gap);
+    margin-top: calc(-1 * $card-set-gap);
+}
+
+.clients__item {
+    flex-basis: calc(100% / 6 - $card-set-gap);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-bg-color;
+    border-radius: 4px;
+
+    transition: border 250ms $timing-function;
+
+    
+    &:hover,
+    &:focus {
+     border: 1px solid $main-color;
+}
+}
+
+.clients__link {
+    display: block;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: $icon-bg-color;
+
+    transition: fill 250ms $timing-function;
+
+    .clients__item:hover &,
+    .clients__item:focus & {
+     fill: $main-color;
+}
+}

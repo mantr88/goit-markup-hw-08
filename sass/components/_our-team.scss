@@ -1,0 +1,76 @@
+.our-team {
+    background-color: $third-bg-color;
+}
+
+.our-team__list {
+    display: flex;
+    margin-left: calc(-1 * $card-set-gap);
+    margin-top: calc(-1 * $card-set-gap);
+}
+
+.our-team__item {
+    flex-basis: calc(100% / 4 - $card-set-gap);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
+    padding-bottom: 30px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $main-bg-color;
+
+    text-align: center;
+}
+
+.our-team__names {
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.our-team__professions {
+    margin-bottom: 16px;
+    color: $second-font-color;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.our-team__card-of-members {
+    margin-bottom: 30px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list__link {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+
+    transition: background-color 250ms $timing-function;
+    
+    &:hover,
+    &:focus {
+    background-color: $main-color;
+}
+}
+
+.social-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-bg-color;
+
+    transition: fill 250ms $timing-function;
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+    fill: $main-bg-color;
+}
+}
