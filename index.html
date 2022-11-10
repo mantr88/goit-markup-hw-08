@@ -73,7 +73,7 @@
           </button>
         </div>
       </section>
-      <!-- <section class="preferences">
+      <section class="preferences">
         <div class="container">
           <h2 class="visually-hidden">Переваги співробітництва з нами</h2>
           <ul class="preferences__list">
@@ -156,9 +156,14 @@
             <li class="our-team__item">
               <img
                 class="our-team__card-of-members"
-                src="./images/img-igor.jpg"
+                srcset="
+                  ./images/img-igor-480.jpg   480w,
+                  ./images/img-igor-768.jpg   768w,
+                  ./images/img-igor-1140.jpg 1140w
+                "
+                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
+                src="./images/img-igor-480.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
               />
               <h3 class="our-team__names">Ігор Дем'яненко</h3>
               <p class="our-team__professions">Product Designer</p>
@@ -196,9 +201,14 @@
             <li class="our-team__item">
               <img
                 class="our-team__card-of-members"
-                src="./images/img-olga.jpg"
+                srcset="
+                  ./images/img-olga-480.jpg   480w,
+                  ./images/img-olga-768.jpg   768w,
+                  ./images/img-olga-1140.jpg 1140w
+                "
+                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
+                src="./images/img-olga-480.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
               />
               <h3 class="our-team__names">Ольга Рєпіна</h3>
               <p class="our-team__professions">Frontend Developer</p>
@@ -236,9 +246,14 @@
             <li class="our-team__item">
               <img
                 class="our-team__card-of-members"
-                src="./images/img-nik.jpg"
+                srcset="
+                  ./images/img-nik-480.jpg   480w,
+                  ./images/img-nik-768.jpg   768w,
+                  ./images/img-nik-1140.jpg 1140w
+                "
+                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
+                src="./images/img-nik-480.jpg"
                 alt="Микола Тарасов"
-                width="270"
               />
               <h3 class="our-team__names">Микола Тарасов</h3>
               <p class="our-team__professions">Marketing</p>
@@ -276,9 +291,14 @@
             <li class="our-team__item">
               <img
                 class="our-team__card-of-members"
-                src="./images/img-mik.jpg"
+                srcset="
+                  ./images/img-mik-480.jpg   480w,
+                  ./images/img-mik-768.jpg   768w,
+                  ./images/img-mik-1140.jpg 1140w
+                "
+                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
+                src="./images/img-mik-480.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
               />
               <h3 class="our-team__names">Михайло Єрмаков</h3>
               <p class="our-team__professions">UI Designer</p>
@@ -483,7 +503,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg

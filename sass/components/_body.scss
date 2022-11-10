@@ -26,7 +26,6 @@ a {
 }
 
 .container {
-    min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -41,24 +40,28 @@ a {
   }
 
   @media screen and (min-width: 1140px) {
-    width: 1140px;
+    width: 1200px;
   }
-    // width: 1200px;
-    // padding-left: 15px;
-    // padding-right: 15px;
-    // margin-left: auto;
-    // margin-right: auto;
 }
-
 
 .preferences,
 .our-work,
 .our-team,
 .clients,
-.galery {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.galery,
+.hero {
+  @media screen and (max-width: 1139px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
+
+  @media screen and (min-width: 1140px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+
 
 .visually-hidden {
   position: absolute;
@@ -77,10 +80,18 @@ a {
 .our-work__title,
 .our-team__title,
 .clients_title {
-    margin-bottom: 50px;
+
+    margin-bottom: 30px;
 
     font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+
+    @media screen and (min-width: 1140px) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
+
+  }
 }
