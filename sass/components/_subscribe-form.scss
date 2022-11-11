@@ -1,5 +1,5 @@
 .subscribe {
-    margin-left: 93px;
+    // margin-left: 93px;
 }
 
 .subscribe__text {
@@ -9,14 +9,17 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .subscribe__box {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .subscribe__label {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.25;  
 }

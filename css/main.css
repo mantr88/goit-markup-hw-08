@@ -945,16 +945,13 @@ a {
   background: #188CE8;
 }
 
-.subscribe {
-  margin-left: 93px;
-}
-
 .subscribe__text {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .subscribe__box {
@@ -964,9 +961,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .subscribe__label {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
 }
@@ -1010,6 +1012,97 @@ a {
   width: 24px;
   height: 24px;
   fill: #ffffff;
+}
+
+.bottom {
+  color: #ffffff;
+  background-color: #2F303A;
+  font-size: 14px;
+  line-height: 1.7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.bottom__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-for-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.logo__white-color {
+  color: #ffffff;
+}
+
+.bottom__logo {
+  margin-bottom: 20px;
+}
+
+.bottom__location {
+  font-style: normal;
+}
+
+.bottom__location-text {
+  margin-bottom: 8px;
+}
+
+.bottom__contakts-list {
+  margin-bottom: 60px;
+}
+
+.bottom__contakts-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.bottom__link {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bottom__link:hover, .bottom__link:focus {
+  color: #2196F3;
+}
+
+.bottom__link--margin {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.social-box__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-list {
+  padding-bottom: 0;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .social-list {
+    margin-bottom: 0;
+  }
+}
+
+.social-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-toggle {
