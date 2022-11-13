@@ -90,8 +90,10 @@
 }
 
 .social-box {
+     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-        padding-top: 10px;
+        padding-top: 25px;
+        margin-bottom: 0;
     }
 }
 
@@ -104,18 +106,6 @@
     text-transform: uppercase;
 }
 
-.social-list {
-    padding-bottom: 0;
-    margin-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-    }
-
-    @media screen and (min-width: 1140px) {
-    margin-bottom: 0;
-}
-}
 
 .social-list__link {
     background-color: $footer-icon-bg-color;

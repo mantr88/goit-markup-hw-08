@@ -46,7 +46,7 @@
     background: $main-bg-color;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
-    transform: translateX(100%);
+    transform: translateX(135%);
     transition: transform 250ms ease-in-out;
 }
 
@@ -68,7 +68,7 @@
 
 .mobile-menu__list {
   padding: 0;
-  margin: 0;
+  margin-bottom: 302px;;
   list-style: none;
 }
 
@@ -85,9 +85,14 @@
     color: $main-color;
 }
 
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
 .mobile-menu__tel {
     font-size: 34px;
     color: $main-color;
+    margin-bottom: 32px;
 }
 
 .mobile-menu__email {

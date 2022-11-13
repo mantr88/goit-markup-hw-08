@@ -23,6 +23,15 @@
       <div class="container container--center">
         <nav class="site-nav">
           <a href="#" class="logo">Web<span class="logo__accent-color">Studio</span></a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студія</a>
@@ -290,55 +299,60 @@
     </main>
     <footer class="bottom">
       <div class="bottom__wrapper container">
-        <div class="bottom___contacts-box">
-          <a href="#" class="logo bottom__logo">Web<span class="logo__white-color">Studio</span></a>
-          <address class="bottom___location">
-            <p class="bottom___location-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
+        <div class="wrapper-for-boxes">
+          <div class="bottom__contacts-box">
+            <a href="#" class="logo bottom__logo"
+              >Web<span class="logo__white-color">Studio</span></a
+            >
+            <address class="bottom__location">
+              <p class="bottom__location-text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="bottom__contakts-list">
+                <li class="bottom__contakts-list-item">
+                  <a href="mailto:info@devstudio.com" class="bottom__link bottom__link--margin"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="bottom__contakts-list-item">
+                  <a href="tel:+380961111111" class="bottom__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-box">
+            <p class="social-box__text">приєднуйтесь</p>
+            <ul class="social-list">
               <li>
-                <a href="mailto:info@devstudio.com" class="bottom___link bottom___link--margin"
-                  >info@devstudio.com</a
-                >
+                <a href="" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="bottom___link">+38 096 111 11 11</a>
+                <a href="" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="social-box">
-          <p class="social-box__text">приєднуйтесь</p>
-          <ul class="social-list">
-            <li>
-              <a href="" class="social-list__link">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-list__link">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-list__link">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-list__link">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <form class="subscribe">
           <p class="subscribe__text">Підпишіться на розсилку</p>
           <div class="subscribe__box">
@@ -355,5 +369,42 @@
         </form>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          class="mobile-menu__icon-close"
+        >
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li><a href="#" class="mobile-menu__link">Студія</a></li>
+        <li><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+        <li><a href="#" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__tel">+38 096 111 11 11</li>
+        <li class="mobile-menu__email">info@devstudio.com</li>
+      </ul>
+      <ul class="mobile-menu__social">
+        <li class="item">Instagram</li>
+        <li class="item">Twitter</li>
+        <li class="item">Facebook</li>
+        <li class="item">LinkedIn</li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -4,11 +4,20 @@
         left: 0;
         width: 100%;
         height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 93px;
+        padding-bottom: 94px;
+
 
         background: $backdrop-bg-color;
 
         opacity: 1;
         transition: opacity 250ms $timing-function;
+        overflow-y: scroll;
+
+
+
     }
 
     .backdrop.is-hidden {
@@ -20,21 +29,31 @@
         transform: translate(-50%, -50%) scale(1.1);
     }
 
-    .modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+    .modal {      
         
-        
-        min-width: 528px;
-        min-height: 591px;
+    //     // min-width: 528px;
+    //     // min-height: 591px;
 
        
         background-color: $main-bg-color;
 
-        transform: translate(-50%, -50%) scale(1);
+        @media screen and (min-width: 480px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 450px;
+            width: 100%;
+            transform: translate(-50%, -50%) scale(1);
+            transition: transform 250ms $timing-function;
+        }
+
+        @media screen and (min-width: 1140px) {
+            max-width: 528px;
+        }
+
         
-        transition: transform 250ms $timing-function;
+        
+        
     }
 
     .modal__close-button {
