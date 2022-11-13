@@ -1,5 +1,5 @@
 .subscribe {
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 93px;
     }
 }
@@ -13,7 +13,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         text-align: left;
     }    
 }
@@ -23,7 +23,7 @@
     align-items: center;
     
 
-    @media screen and (max-width: 1139px) {
+    @media screen and (max-width: 1199px) {
         flex-direction: column;
     }
 }
@@ -32,7 +32,7 @@
     font-size: 16px;
     line-height: 1.25; 
     
-    @media screen and (max-width: 1139px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
 }
@@ -48,7 +48,7 @@
     border-radius: 4px;
     background-color: $secondary-bg-color;
 
-    @media screen and (max-width: 1139px) {
+    @media screen and (max-width: 1199px) {
         max-width: 450px;
         
     }   
@@ -73,7 +73,7 @@
     border: transparent;
     cursor: pointer;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         padding-left: 28px;
         padding-right: 28px;
         margin-left: 10px;
@@ -86,9 +86,7 @@
     height: 24px;
     fill: $white-font-color;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 10px;
     }
-
-    
 }

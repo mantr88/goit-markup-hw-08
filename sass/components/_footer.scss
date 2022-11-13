@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
     flex-direction: row;
 }
 }
@@ -31,7 +31,7 @@
     margin-right: 165px;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
     margin-right: 70px;
 }
 }
@@ -51,7 +51,7 @@
 .bottom__location-text {
     margin-bottom: 8px;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
 }
     
@@ -60,7 +60,7 @@
 .bottom__contakts-list {
     margin-bottom: 60px;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
     margin-bottom: 0;
 }
 }
@@ -84,7 +84,7 @@
 .bottom__link--margin {
     display: block;
     
-    @media screen and (max-width: 1139px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 9px;
     }
 }
