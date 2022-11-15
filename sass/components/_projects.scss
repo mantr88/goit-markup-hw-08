@@ -15,8 +15,8 @@
     width: calc((100% - 3 * 30px) / 3);
     
   }
-    transition: box-shadow 250ms $timing-function;
 
+    transition: box-shadow 250ms $timing-function;
     
    &:hover,
    &:focus {
@@ -40,7 +40,7 @@
 
     background-color: $thumb-bg-color;
 
-    transform: translateY(100%);
+    transform: translateY(102%);
     transition: transform 250ms $timing-function;
     
     .projects__item:hover & {
@@ -48,7 +48,6 @@
 }
 
 }
-
 
 .projects__description {
     padding-top: 63px;
@@ -63,6 +62,9 @@
     color: $white-font-color;
 }
 
+.projects__card {
+    width: 100%;
+}
 .projects__title-block {
     padding: 20px 24px;
 
