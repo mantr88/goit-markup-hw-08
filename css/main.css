@@ -357,25 +357,26 @@ a {
 }
 
 .icon-box {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 192.34px;
-  padding-right: 192.34px;
+  padding-left: 190px;
+  padding-right: 190px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 @media screen and (min-width: 768px) {
   .icon-box {
-    width: 354px;
+    max-width: 354px;
     padding-left: 144px;
     padding-right: 144px;
   }
 }
 @media screen and (min-width: 1200px) {
   .icon-box {
-    width: 270px;
+    max-width: 270px;
     padding-left: 102px;
     padding-right: 102px;
   }
@@ -566,6 +567,7 @@ a {
 
 .clients__item {
   width: calc((100% - 60px) / 2);
+  max-width: 210px;
   margin: 15px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -579,11 +581,13 @@ a {
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 90px) / 3);
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1140px) {
   .clients__item {
     width: calc((100% - 180px) / 6);
+    max-width: 170px;
   }
 }
 
@@ -1059,6 +1063,7 @@ a {
 }
 @media screen and (max-width: 1199px) {
   .subscribe__input {
+    width: 50vh;
     max-width: 450px;
   }
 }

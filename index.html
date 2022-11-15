@@ -154,17 +154,25 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__item">
-              <img
-                class="our-team__card-of-members"
-                srcset="
-                  ./images/img-igor-480.jpg   480w,
-                  ./images/img-igor-768.jpg   768w,
-                  ./images/img-igor-1140.jpg 1140w
-                "
-                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
-                src="./images/img-igor-480.jpg"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-igor-480.jpg 1x, ./images/img-igor-480@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/img-igor-768.jpg 1x, ./images/img-igor-768@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/img-igor-1200.jpg 1x, ./images/img-igor-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img-igor-480.jpg"
+                  alt="Ігор Дем'яненко"
+                  class="our-team__card-of-members"
+                />
+              </picture>
               <h3 class="our-team__names">Ігор Дем'яненко</h3>
               <p class="our-team__professions">Product Designer</p>
               <ul class="social-list">
@@ -199,17 +207,26 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__card-of-members"
-                srcset="
-                  ./images/img-olga-480.jpg   480w,
-                  ./images/img-olga-768.jpg   768w,
-                  ./images/img-olga-1140.jpg 1140w
-                "
-                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
-                src="./images/img-olga-480.jpg"
-                alt="Ольга Рєпіна"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-olga-480.jpg 1x, ./images/img-olga-480@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/img-olga-768.jpg 1x, ./images/img-olga-768@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/img-olga-1200.jpg 1x, ./images/img-olga-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img-olga-480.jpg"
+                  alt="Ольга Рєпіна"
+                  class="our-team__card-of-members"
+                />
+              </picture>
+
               <h3 class="our-team__names">Ольга Рєпіна</h3>
               <p class="our-team__professions">Frontend Developer</p>
               <ul class="social-list">
@@ -244,17 +261,26 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__card-of-members"
-                srcset="
-                  ./images/img-nik-480.jpg   480w,
-                  ./images/img-nik-768.jpg   768w,
-                  ./images/img-nik-1140.jpg 1140w
-                "
-                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
-                src="./images/img-nik-480.jpg"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-nik-480.jpg 1x, ./images/img-nik-480@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/img-nik-768.jpg 1x, ./images/img-nik-768@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/img-nik-1200.jpg 1x, ./images/img-nik-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img-nik-480.jpg"
+                  alt="Микола Тарасов"
+                  class="our-team__card-of-members"
+                />
+              </picture>
+
               <h3 class="our-team__names">Микола Тарасов</h3>
               <p class="our-team__professions">Marketing</p>
               <ul class="social-list">
@@ -289,17 +315,26 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__card-of-members"
-                srcset="
-                  ./images/img-mik-480.jpg   480w,
-                  ./images/img-mik-768.jpg   768w,
-                  ./images/img-mik-1140.jpg 1140w
-                "
-                sizes="(min-width: 480px) 480px, (min-width: 768px) 768px, (min-width: 1140px) 1140px, 100vw"
-                src="./images/img-mik-480.jpg"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  srcset="./images/img-mik-480.jpg 1x, ./images/img-mik-480@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="./images/img-mik-768.jpg 1x, ./images/img-mik-768@2x.jpg 2x"
+                  media="(max-width:1199px)"
+                />
+                <source
+                  srcset="./images/img-mik-1200.jpg 1x, ./images/img-mik-1200@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/img-mik-480.jpg"
+                  alt="ММихайло Єрмаков"
+                  class="our-team__card-of-members"
+                />
+              </picture>
+
               <h3 class="our-team__names">Михайло Єрмаков</h3>
               <p class="our-team__professions">UI Designer</p>
               <ul class="social-list">
